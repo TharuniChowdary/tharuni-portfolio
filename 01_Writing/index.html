@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tharuni | Digital Portfolio</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #faf9ff;
+      color: #292344;
+      line-height: 1.7;
+    }
+    header {
+      background: #edecf0;
+      color: rgb(169, 27, 27);
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    header a { color: white; text-decoration: none; margin-right: 14px; }
+    .hero { padding: 75px 8%; background: #eee8ff; }
+    .hero h1 { font-size: clamp(36px, 6vw, 58px); margin: 0; }
+    .hero span { color: #7145bd; }
+    .button {
+      display: inline-block;
+      background: #6039a3;
+      color: white;
+      padding: 11px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin: 8px 8px 0 0;
+    }
+    section { padding: 45px 8%; }
+    h2 { color: #503184; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: white;
+      padding: 22px;
+      border-radius: 14px;
+      border: 1px solid #e5def4;
+      box-shadow: 0 4px 14px #35205e0c;
+    }
+    .card h3 { margin-top: 0; }
+    .card a { color: #6039a3; font-weight: bold; }
+    footer {
+      background: #35205e;
+      color: white;
+      text-align: center;
+      padding: 22px;
+    }
+    @media (max-width: 600px) {
+      header { padding: 18px 5%; }
+      header nav a { display: inline-block; margin: 4px 8px 4px 0; }
+      .hero, section { padding: 35px 5%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <strong>Tharuni | Portfolio</strong>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <p>WELCOME TO MY PORTFOLIO</p>
+    <h1>Hi, I'm <span>Tharuni.</span></h1>
+    <h2>Writing · Research · Online Assistance · AI Websites</h2>
+    <p>
+      I'm a first-year B.Tech student building practical digital
+      skills and creating useful online experiences for businesses.
+    </p>
+    <a class="button" href="#projects">Explore My Work</a>
+    <a class="button" href="#contact">Contact Me</a>
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm an aspiring digital service provider interested in writing,
+      research, online assistance and AI-assisted website development.
+      I'm building practical projects to demonstrate my skills and
+      looking for opportunities to learn and collaborate.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>What I Can Help With</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Writing</h3>
+        <p>Articles, content drafts, proofreading and document formatting.</p>
+      </div>
+      <div class="card">
+        <h3>Research</h3>
+        <p>Online research, source organization and structured reports.</p>
+      </div>
+      <div class="card">
+        <h3>Online Assistance</h3>
+        <p>Task trackers, spreadsheets and organized administrative work.</p>
+      </div>
+      <div class="card">
+        <h3>AI Websites</h3>
+        <p>Simple responsive website demos created with AI assistance.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="grid">
+      <div class="card">
+       <h3>01. Writing Sample</h3>
+       <p>5 Ways Small Businesses Can Use AI to Save Time.</p>
+       <p>A practice article demonstrating clear, structured writing.</p>
+      </div>
+      <div class="card">
+        <h3>02. Research Report</h3>
+        <p>Digital Marketing Opportunities for a Small Boutique.</p>
+        <p>A practice report with recommendations and sources to consult.</p>
+      </div>
+      <div class="card">
+        <h3>03. Client Task Tracker</h3>
+        <p>A sample spreadsheet for managing tasks, priorities and deadlines.</p>
+      </div>
+      <div class="card">
+        <h3>04. Shree Boutique Website</h3>
+        <p>A responsive website demo for a fictional Indian clothing boutique.</p>
+        <a href="https://shree-boutique-website--tharunithammine.replit.app/"
+           target="_blank" rel="noopener noreferrer">View Live Website ↗</a>
+      </div>
+    </div>
+    <p>
+      The first three projects are practice samples. Add links to your
+      actual documents and spreadsheet after uploading them to a suitable
+      public location.
+    </p>
+  </section>
+
+  <section id="certificates">
+    <h2>Certifications</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>YUVA AI for ALL</h3>
+        <p>Completed — certificate available on request or through its verified link.</p>
+      </div>
+      <div class="card">
+        <h3>TCS iON Career Edge</h3>
+        <p>Young Professional — completed.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Let's Connect</h2>
+    <p>Interested in discussing a project or collaboration?</p>
+    <p>Email me at <a href="mailto:thamminenitharunichowdary@gmail.com">thamminenitharunichowdary@gmail.com</a>.</p>
+    <a class="button" href="mailto:thamminenitharunichowdary@gmail.com">Email Me</a>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Tharuni | Digital Portfolio</p>
+  <p>Built while learning and growing, one project at a time.</p>
+</footer>
+
+</body>
+</html>
